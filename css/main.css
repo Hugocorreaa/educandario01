@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 #home {
@@ -43,7 +44,7 @@
 
 #modalidades-ensino #titulo-modalidades h1 {
   color: rgba(210, 1, 5, 0.88);
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 300;
   margin-left: 100px;
 }
@@ -73,13 +74,13 @@
 }
 
 #modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades h2 {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: normal;
   margin-top: 10px;
 }
 
 #modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades .card-modalidades-inside-container {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #737373;
   margin-top: 50px;
   width: 221px;
@@ -94,7 +95,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 65px;
+  font-size: 6.5rem;
   font-weight: 400;
   margin-top: 136px;
   margin-left: 100px;
@@ -116,7 +117,7 @@
   width: 653px;
   height: 330px;
   text-align: justify;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 #quem-somos #quem-somos-generic-container #left-right-quem-somos-container #right-quem-somos-container {
@@ -150,7 +151,7 @@
 
 #contato #titulo h1 {
   color: rgba(210, 1, 5, 0.88);
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 300;
   margin-left: 50px;
 }
@@ -187,7 +188,7 @@
   margin-top: 44px;
   margin-left: 78px;
   padding: 30px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 #contato #generic-container-contato #esquerda #contato-main #mapa-endereco #endereco img {
@@ -247,7 +248,7 @@
           box-shadow: -2px 7px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   color: rgba(255, 255, 255, 0.88);
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 #contato #generic-container-contato #redes {
@@ -275,7 +276,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 #instagram {
@@ -290,7 +291,7 @@ footer {
 }
 
 #estrutura-escolar h1 {
-  font-size: 65px;
+  font-size: 6.5rem;
   font-weight: 400;
   margin-left: 100px;
   padding-bottom: 72px;
@@ -332,12 +333,17 @@ footer {
   text-decoration: none;
 }
 
+html {
+  /* a cada 1rem será consideredo 10px */
+  font-size: 62.5%;
+}
+
 header {
   height: 116px;
   width: 99vw;
   background: #d40105;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header nav {
@@ -350,25 +356,47 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 3rem;
+}
+
+header nav .mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 786px) {
+  header nav .mobile-menu {
+    display: initial;
+  }
+}
+
+header nav .mobile-menu div {
+  height: 2px;
+  width: 32px;
+  border-radius: 2px;
+  background: #fff;
+  margin: 8px;
 }
 
 header nav #logo {
-  width: 111px;
-  margin: 15px 0 0 120px;
+  width: 68.75%;
+  margin: 15px 0 0 7%;
 }
 
 header nav #menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 55px;
+  gap: 5.5rem;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
-header nav #menu :last-child {
-  padding-right: 26px;
+@media (max-width: 786px) {
+  header nav #menu {
+    display: none;
+  }
 }
 
 header nav #menu li {
@@ -381,12 +409,53 @@ header nav #menu li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 10.292rem;
+  height: 54.49px;
 }
 
-header nav #menu li a:hover {
+header nav #menu li:first-child {
+  background: #ffffff;
+  border-radius: 5px;
+  color: #d20105;
+}
+
+header nav #menu li:hover:nth-child(n + 2):nth-child(-n + 5) {
   background: rgba(255, 255, 255, 0.22);
   border-radius: 5px;
-  padding: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+header nav #menu li a {
+  width: 20rem;
+  height: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav #menu #botao-portal {
+  width: 20rem;
+  height: 63px;
+}
+
+header nav #menu #botao-portal a {
+  background: #02447e;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+header nav #menu #botao-portal a:hover {
+  background: #074c88;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 main {
