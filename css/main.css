@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 #home {
   height: 110vh;
-  width: 100vw;
+  width: 99vw;
 }
 
 #home .swiper {
@@ -12,7 +12,7 @@
 
 #modalidades-ensino {
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   background-color: #d20105;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -83,7 +83,7 @@
 
 #quem-somos {
   height: 115vh;
-  width: 100vw;
+  width: 99vw;
 }
 
 #quem-somos #quem-somos-generic-container h1 {
@@ -121,7 +121,7 @@
 
 #contato {
   height: 115vh;
-  width: 100vw;
+  width: 99vw;
   background: #d40105;
 }
 
@@ -275,13 +275,13 @@ footer {
 
 #instagram {
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
   background: white;
 }
 
 #estrutura-escolar {
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
 }
 
 #estrutura-escolar h1 {
@@ -316,7 +316,6 @@ footer {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
-  overflow-x: hidden;
 }
 
 * li {
@@ -330,7 +329,7 @@ footer {
 
 header {
   height: 116px;
-  width: 100vw;
+  width: 99vw;
   background: #d40105;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
