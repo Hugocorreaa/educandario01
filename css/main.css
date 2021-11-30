@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+#contato {
+  height: 115vh;
+  width: 100vw;
+  background: #d40105;
+}
+
+#contato #titulo {
+  height: 98px;
+  width: 408px;
+  border-radius: 0 50px 50px 0;
+  -webkit-box-shadow: inset -2px 7px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset -2px 7px 4px rgba(0, 0, 0, 0.25);
+  background: white;
+  margin-top: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contato #titulo h1 {
+  color: rgba(210, 1, 5, 0.88);
+  font-size: 50px;
+  font-weight: 300;
+  margin-left: 50px;
+}
+
+#contato #generic-container-contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contato #generic-container-contato #esquerda {
+  width: 50%;
+}
+
+#contato #generic-container-contato #esquerda #contato-main #mapa-endereco #mapa {
+  border: 30px;
+  margin-top: 60px;
+  margin-left: 78px;
+}
+
+#contato #generic-container-contato #esquerda #contato-main #mapa-endereco #mapa iframe {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#contato #generic-container-contato #esquerda #contato-main #mapa-endereco #endereco {
+  width: 652px;
+  height: 215px;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 44px;
+  margin-left: 78px;
+  padding: 30px;
+  font-size: 20px;
+}
+
+#contato #generic-container-contato #esquerda #contato-main #mapa-endereco #endereco img {
+  margin-right: 30px;
+}
+
+#contato #generic-container-contato #esquerda #contato-main #mapa-endereco #endereco #telefone,
+#contato #generic-container-contato #esquerda #contato-main #mapa-endereco #endereco #email {
+  margin-top: 15px;
+}
+
+#contato #generic-container-contato #direita {
+  width: 50%;
+  padding-left: 78px;
+}
+
+#contato #generic-container-contato #direita #formulario-redes #formulario {
+  margin-top: 31px;
+}
+
+#contato #generic-container-contato #direita #formulario-redes #formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contato #generic-container-contato #direita #formulario-redes #formulario form #nome-form,
+#contato #generic-container-contato #direita #formulario-redes #formulario form #email-form,
+#contato #generic-container-contato #direita #formulario-redes #formulario form #tel-form,
+#contato #generic-container-contato #direita #formulario-redes #formulario form #mens-form {
+  width: 499px;
+  height: 49px;
+  background: #ffffff;
+  border: 0;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-top: 27px;
+}
+
+#contato #generic-container-contato #direita #formulario-redes #formulario form #mens-form {
+  height: 151px;
+}
+
+#contato #generic-container-contato #direita #formulario-redes #formulario form #enviar-button {
+  width: 140px;
+  height: 56px;
+  margin-top: 27px;
+  margin-left: 359px;
+  background: #02447e;
+  border: none;
+  -webkit-box-shadow: -2px 7px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: -2px 7px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 25px;
+}
+
+#contato #generic-container-contato #redes {
+  margin-top: 30px;
+  margin-left: 260px;
+}
+
+#contato #generic-container-contato #redes img {
+  margin-right: 13px;
+}
+
+footer {
+  height: 116px;
+  background: #011351;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+#instagram {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+}
+
+#estrutura-escolar {
+  height: 100vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+* li {
+  list-style: none;
+}
+
+* li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  height: 116px;
+  width: 100vw;
+  background: #d40105;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav #logo {
+  width: 111px;
+  margin: 15px 0 0 120px;
+}
+
+header nav #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 55px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+header nav #menu :last-child {
+  padding-right: 26px;
+}
+
+header nav #menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav #menu li a:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+main {
+  height: 800%;
+}
+/*# sourceMappingURL=main.css.map */
