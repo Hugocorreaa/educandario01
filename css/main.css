@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 #home {
-  height: 110vh;
+  height: 99vh;
   width: 99vw;
 }
 
@@ -364,7 +364,7 @@ header nav .mobile-menu {
   cursor: pointer;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 990px) {
   header nav .mobile-menu {
     display: initial;
   }
@@ -380,7 +380,13 @@ header nav .mobile-menu div {
 
 header nav #logo {
   width: 68.75%;
-  margin: 15px 0 0 7%;
+  margin: 1.5rem 0 0 7%;
+}
+
+@media (max-width: 990px) {
+  header nav #logo {
+    padding-left: 38.5%;
+  }
 }
 
 header nav #menu {
@@ -393,9 +399,35 @@ header nav #menu {
   font-weight: 400;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 1270px) {
   header nav #menu {
-    display: none;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 1108px) {
+  header nav #menu {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 990px) {
+  header nav #menu {
+    position: absolute;
+    top: 115px;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: #d40105;
+    z-index: 999;
   }
 }
 
@@ -411,6 +443,14 @@ header nav #menu li {
           align-items: center;
   width: 10.292rem;
   height: 54.49px;
+}
+
+@media (max-width: 1270px) {
+  header nav #menu li {
+    font-size: 1.8rem;
+    width: 10rem;
+    height: 50px;
+  }
 }
 
 header nav #menu li:first-child {
@@ -443,6 +483,13 @@ header nav #menu li a {
 header nav #menu #botao-portal {
   width: 20rem;
   height: 63px;
+}
+
+@media (max-width: 1270px) {
+  header nav #menu #botao-portal {
+    width: 15rem;
+    height: 50px;
+  }
 }
 
 header nav #menu #botao-portal a {
