@@ -1,8 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-.swiper {
-  width: 600px;
-  height: 300px;
+#home {
+  height: 110vh;
+  width: 100vw;
+}
+
+#home .swiper {
+  height: 100%;
+  width: 100%;
+}
+
+#modalidades-ensino {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d20105;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#modalidades-ensino #titulo-modalidades {
+  height: 98px;
+  width: 806px;
+  border-radius: 0 50px 50px 0;
+  -webkit-box-shadow: inset -2px 7px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset -2px 7px 4px rgba(0, 0, 0, 0.25);
+  background: white;
+  margin-top: 63px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalidades-ensino #titulo-modalidades h1 {
+  color: rgba(210, 1, 5, 0.88);
+  font-size: 35px;
+  font-weight: 300;
+  margin-left: 100px;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 67px;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades {
+  width: 328px;
+  height: 344px;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 13px 19px rgba(0, 0, 0, 0.07);
+          box-shadow: inset 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades .card-modalidades-inside-container {
+  font-size: 14px;
+  color: #737373;
+  margin-top: 50px;
+  width: 221px;
+}
+
+#quem-somos {
+  height: 115vh;
+  width: 100vw;
+}
+
+#quem-somos #quem-somos-generic-container h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 65px;
+  font-weight: 400;
+  margin-top: 156px;
+  margin-left: 100px;
+}
+
+#quem-somos #quem-somos-generic-container #left-right-quem-somos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#quem-somos #quem-somos-generic-container #left-right-quem-somos-container #left-quem-somos-container {
+  width: 50%;
+  margin-left: 91px;
+  padding-top: 71px;
+}
+
+#quem-somos #quem-somos-generic-container #left-right-quem-somos-container #left-quem-somos-container p {
+  width: 653px;
+  height: 330px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#quem-somos #quem-somos-generic-container #left-right-quem-somos-container #right-quem-somos-container {
+  width: 50%;
 }
 
 #contato {
@@ -144,6 +258,8 @@
 footer {
   height: 116px;
   background: #011351;
+  -webkit-box-shadow: 0px -3px 10px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px -3px 10px 6px rgba(0, 0, 0, 0.25);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +281,33 @@ footer {
 
 #estrutura-escolar {
   height: 100vh;
+  width: 100vw;
+}
+
+#estrutura-escolar h1 {
+  font-size: 65px;
+  font-weight: 400;
+  margin-left: 100px;
+  padding-bottom: 72px;
+}
+
+#estrutura-escolar #estrutura-escolar-fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 25px;
+}
+
+#estrutura-escolar #estrutura-escolar-fotos #foto-quadra #quadra:hover {
+  border: 1px solid red;
 }
 
 * {
@@ -189,6 +332,8 @@ header {
   height: 116px;
   width: 100vw;
   background: #d40105;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 header nav {

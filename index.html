@@ -8,6 +8,8 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="/css/main.css" />
+  <!-- Swiper link -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -28,15 +30,14 @@
   </header>
 
   <main>
-
+    <!-- ======== HOME ======== -->
     <section id="home">
-
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
+          <img src="img/home/BG.svg" class="swiper-slide"></img>
           <div class="swiper-slide">Slide 2</div>
           <div class="swiper-slide">Slide 3</div>
         </div>
@@ -48,29 +49,113 @@
         <div class="swiper-button-next"></div>
       </div>
     </section>
+    <!-- ======= MODALIDADES DE ENSINO ======= -->
+    <section id="modalidades-ensino">
+      <div id="titulo-modalidades">
+        <h1>PARA CADA FASE DO SEU FILHO</h1>
+      </div>
 
-    <section></section>
-    <section id="quem-somos"></section>
+      <div id="generic-container-modalidades">
+        <div id="card-modalidades-containers">
+          <div class="card-modalidades">
+            <img src="img/modalidades/hat.svg" alt="">
+            <h2>Educação Infantil</h2>
+            <div class="card-modalidades-inside-container">
+              <p>
+                The gradual accumulation of
+                information about atomic and
+                small-scale behaviour...
+              </p>
+            </div>
+          </div>
+          <div class="card-modalidades">
+            <img src="img/modalidades/backpack.svg" alt="">
+            <h2>Ensino Fundamental I e II</h2>
+            <div class="card-modalidades-inside-container">
+              <p>
+                The gradual accumulation of
+                information about atomic and
+                small-scale behaviour...
+              </p>
+            </div>
+          </div>
+          <div class="card-modalidades">
+            <img src="img/modalidades/book.svg" alt="">
+            <h2>Ensino Médio</h2>
+            <div class="card-modalidades-inside-container">
+              <p>
+                The gradual accumulation of
+                information about atomic and
+                small-scale behaviour...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== QUEM SOMOS ========= -->
+    <section id="quem-somos">
+      <div id="quem-somos-generic-container">
+        <h1>
+          Quem Somos
+        </h1>
 
+        <div id="left-right-quem-somos-container">
+          <div id="left-quem-somos-container">
+            <p>Lorem ipsum dolor sit amet. Aut itaque similique et voluptatem architecto At optio perferendis ut autem
+              tempora ut rerum omnis ut voluptatem itaque. Sit quia necessitatibus aut eveniet expedita qui repudiandae
+              ducimus et deleniti accusantium est dignissimos omnis et pariatur explicabo. Vel harum beatae qui quidem
+              consequatur aut nobis facere sit nobis velit vel earum autem quo minima consequatur vel magnam
+              voluptate.<br><br>
+              Aut illo cupiditate ex soluta quia vel quas odit vel omnis vitae in architecto fugit aut laboriosam
+              galisum qui soluta delectus. Est dolorem fuga et autem deserunt eum necessitatibus possimus? Vel autem
+              molestiae qui dicta nobis sit odio iure.</p>
+          </div>
+          <div id="right-quem-somos-container">
+            <img src="img/quemsomos/01.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== ESTRUTURA ESCOLAS ========= -->
     <section id="estrutura-escolar">
       <h1>Estrutura Escolar</h1>
 
       <div id="estrutura-escolar-fotos">
-        <img src="img/estrutura/01.svg" alt="">
-        <img src="img/estrutura/02.svg" alt="">
-        <img src="img/estrutura/03.svg" alt="">
-        <img src="img/estrutura/04.svg" alt="">
-        <img src="img/estrutura/05.svg" alt="">
-        <img src="img/estrutura/06.svg" alt="">
+        <div id="foto-quadra">
+          <img id="quadra" src="img/estruturaescolar/01.svg" alt="">
+        </div>
+
+        <div>
+          <img id="playground" src="img/estruturaescolar/02.png" alt="">
+        </div>
+
+        <div>
+          <img id="piscina" src="img/estruturaescolar/03.svg" alt="">
+        </div>
+
+        <div>
+          <img id="sein" src="img/estruturaescolar/04.svg" alt="">
+        </div>
+
+        <div>
+          <img id="biblioteca" src="img/estruturaescolar/05.svg" alt="">
+        </div>
+
+        <div>
+          <img id="programacao" src="img/estruturaescolar/06.svg" alt="">
+        </div>
+
 
       </div>
     </section>
-
+    <!-- ======== EVENTOS E FOTOS ======== -->
     <section id="eventos-fotos"></section>
+    <!-- ======= CALENDARIO ======== -->
     <section id="calendario"></section>
-
+    <!-- ======= INSTAGRAM ======== -->
     <section id="instagram"></section>
-
+    <!-- ========= CONTATO ======== -->
     <section id="contato">
       <div id="titulo">
         <h1>Contato</h1>
@@ -136,6 +221,8 @@
     <p>Educandário © 2021. Desenvolvido pela <strong>EJECT</strong></p>
   </footer>
 
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="javascript/swiper.js"></script>
 </body>
 
 </html>

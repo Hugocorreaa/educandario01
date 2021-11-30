@@ -1,0 +1,29 @@
+#estrutura-escolar {
+  height: 100vh;
+  width: 100vw;
+
+  h1 {
+    font-size: 65px;
+    font-weight: 400;
+
+    margin-left: 100px;
+    padding-bottom: 72px;
+  }
+
+  #estrutura-escolar-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 25px;
+
+    #foto-quadra {
+      #quadra {
+        &:hover {
+          border: 1px solid red;
+        }
+      }
+    }
+  }
+}

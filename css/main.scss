@@ -1,4 +1,4 @@
-@import 'home', 'contato', 'instagram', 'estrutura';
+@import 'home', 'modalidadesensino', 'quemsomos', 'contato', 'instagram', 'estruturaescolar';
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
@@ -28,6 +28,7 @@ header {
   width: 100vw;
 
   background: $background-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 
 
 
@@ -35,6 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
     #logo {
       width: 111px;
@@ -54,6 +56,10 @@ header {
       }
 
       li{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         a{
             &:hover{
@@ -65,9 +71,6 @@ header {
 
         }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
       }
 

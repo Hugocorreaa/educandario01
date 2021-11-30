@@ -1,0 +1,40 @@
+#quem-somos {
+  height: 115vh;
+  width: 100vw;
+
+  #quem-somos-generic-container {
+    h1 {
+      width: fit-content;
+
+      font-size: 65px;
+      font-weight: 400;
+
+      margin-top: 156px;
+      margin-left: 100px;
+    }
+
+    #left-right-quem-somos-container {
+      display: flex;
+
+      #left-quem-somos-container {
+        width: 50%;
+        margin-left: 91px;
+        padding-top: 71px;
+
+        p {
+          width: 653px;
+          height: 330px;
+
+          text-align: justify;
+
+          font-size: 20px;
+        }
+      }
+
+      #right-quem-somos-container {
+        width: 50%;
+
+      }
+    }
+  }
+}
