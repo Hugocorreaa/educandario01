@@ -518,6 +518,12 @@ footer {
   text-underline-offset: 11px;
 }
 
+@media (max-width: 500px) {
+  #estrutura-escolar h1 {
+    font-size: 4rem;
+  }
+}
+
 #estrutura-escolar #estrutura-escolar-fotos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,6 +537,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 25px;
+  display: none;
 }
 
 #estrutura-escolar #estrutura-escolar-fotos #foto-overlay {
@@ -581,6 +588,28 @@ footer {
 #estrutura-escolar #estrutura-escolar-fotos #container-foto-overlay #img {
   display: block;
   width: 100%;
+}
+
+#estrutura-escolar #estrutura-escolar-fotos-mobile .swiper3 .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#estrutura-escolar #estrutura-escolar-fotos-mobile .swiper3 .swiper-pagination3 {
+  text-align: center;
+}
+
+@media (max-width: 841px) {
+  #estrutura-escolar #estrutura-escolar-fotos-mobile {
+    display: initial;
+  }
 }
 
 * {
