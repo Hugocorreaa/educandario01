@@ -277,6 +277,12 @@
   margin-left: 100px;
 }
 
+#quem-somos #quem-somos-generic-container h1 span {
+  -webkit-text-decoration: underline #7AAAD0;
+          text-decoration: underline #7AAAD0;
+  text-underline-offset: 11px;
+}
+
 @media (max-width: 500px) {
   #quem-somos #quem-somos-generic-container h1 {
     font-size: 4rem;
@@ -504,6 +510,12 @@ footer {
   margin-left: 100px;
   padding-bottom: 72px;
   padding-top: 153px;
+}
+
+#estrutura-escolar h1 span {
+  -webkit-text-decoration: underline #7AAAD0;
+          text-decoration: underline #7AAAD0;
+  text-underline-offset: 11px;
 }
 
 #estrutura-escolar #estrutura-escolar-fotos {

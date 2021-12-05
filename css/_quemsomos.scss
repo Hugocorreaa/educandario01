@@ -12,6 +12,11 @@
       margin-top: 136px;
       margin-left: 100px;
 
+      span{
+        text-decoration: underline #7AAAD0;
+        text-underline-offset: 11px;
+      }
+
       @media (max-width: 500px){
         font-size: 4rem;
       }
