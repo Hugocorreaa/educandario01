@@ -1,12 +1,12 @@
 #estrutura-escolar {
-  height: 100vh;
+  height: auto;
   width: 100vw;
 
   h1 {
     font-size: 6.5rem;
     font-weight: 400;
 
-    margin-left: 100px;
+    margin-left: 6.5%;
     padding-bottom: 72px;
     padding-top: 153px;
 
@@ -29,9 +29,9 @@
 
     flex-wrap: wrap;
     gap: 25px;
-    display: none;
-    @media (max-width: 841px){
 
+    @media (max-width: 841px){
+      display: none;
     }
 
     #foto-overlay {
@@ -84,9 +84,10 @@
   }
 
   #estrutura-escolar-fotos-mobile{
-
+    display: none;
 
     .swiper3{
+      overflow: hidden;
 
       .swiper-wrapper{
         .swiper-slide{

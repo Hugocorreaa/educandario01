@@ -8,6 +8,8 @@ $yellow: #f1c40f;
     height: 100%;
     width: 100%;
 
+    overflow: hidden;
+
     .swiper-wrapper {
       #slide01 {
         background-image: url(/img/home/BG1.svg);

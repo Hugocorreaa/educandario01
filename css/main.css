@@ -9,6 +9,7 @@
 #home .swiper1 {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 #home .swiper1 .swiper-wrapper #slide01 {
@@ -274,7 +275,7 @@
   font-size: 6.5rem;
   font-weight: 400;
   margin-top: 136px;
-  margin-left: 100px;
+  margin-left: 6.5%;
 }
 
 #quem-somos #quem-somos-generic-container h1 span {
@@ -302,7 +303,7 @@
 
 #quem-somos #quem-somos-generic-container #left-right-quem-somos-container #left-quem-somos-container {
   width: 760px;
-  padding-left: 102px;
+  padding-left: 6.5%;
   padding-top: 71px;
 }
 
@@ -494,20 +495,50 @@ footer {
 }
 
 #instagram {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background: white;
 }
 
+#instagram h1 {
+  font-size: 6.5rem;
+  font-weight: 400;
+  margin-left: 6.5%;
+  padding-bottom: 72px;
+  padding-top: 153px;
+}
+
+#instagram h1 span {
+  -webkit-text-decoration: underline #7AAAD0;
+          text-decoration: underline #7AAAD0;
+  text-underline-offset: 11px;
+}
+
+@media (max-width: 500px) {
+  #instagram h1 {
+    font-size: 4rem;
+  }
+}
+
+#instagram #nosso-instagram-fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 27px;
+  margin-left: 6.5%;
+}
+
 #estrutura-escolar {
-  height: 100vh;
+  height: auto;
   width: 100vw;
 }
 
 #estrutura-escolar h1 {
   font-size: 6.5rem;
   font-weight: 400;
-  margin-left: 100px;
+  margin-left: 6.5%;
   padding-bottom: 72px;
   padding-top: 153px;
 }
@@ -537,7 +568,12 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 25px;
-  display: none;
+}
+
+@media (max-width: 841px) {
+  #estrutura-escolar #estrutura-escolar-fotos {
+    display: none;
+  }
 }
 
 #estrutura-escolar #estrutura-escolar-fotos #foto-overlay {
@@ -588,6 +624,14 @@ footer {
 #estrutura-escolar #estrutura-escolar-fotos #container-foto-overlay #img {
   display: block;
   width: 100%;
+}
+
+#estrutura-escolar #estrutura-escolar-fotos-mobile {
+  display: none;
+}
+
+#estrutura-escolar #estrutura-escolar-fotos-mobile .swiper3 {
+  overflow: hidden;
 }
 
 #estrutura-escolar #estrutura-escolar-fotos-mobile .swiper3 .swiper-wrapper .swiper-slide {

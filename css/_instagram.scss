@@ -1,6 +1,37 @@
 #instagram{
-    height: 100vh;
+    height: auto;
     width: 100vw;
 
     background: white;
+
+    h1 {
+        font-size: 6.5rem;
+        font-weight: 400;
+    
+        margin-left: 6.5%;
+        padding-bottom: 72px;
+        padding-top: 153px;
+    
+        span{
+          text-decoration: underline #7AAAD0;
+          text-underline-offset: 11px;
+        }
+    
+        @media (max-width: 500px){
+          font-size: 4rem;
+        }    
+    }
+
+    #nosso-instagram-fotos{
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 27px;
+
+        margin-left: 6.5%;
+
+
+
+    }
 }
