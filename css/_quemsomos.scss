@@ -1,5 +1,5 @@
 #quem-somos {
-  height: 115vh;
+  height: 115%;
   width: 99vw;
 
   #quem-somos-generic-container {
@@ -11,29 +11,57 @@
 
       margin-top: 136px;
       margin-left: 100px;
+
+      @media (max-width: 500px){
+        font-size: 4rem;
+      }
     }
 
     #left-right-quem-somos-container {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @media (max-width: 1096px) {
+      }
 
       #left-quem-somos-container {
-        width: 50%;
-        margin-left: 91px;
+
+        width: 760px;
+        padding-left: 102px;
         padding-top: 71px;
+
+
 
         p {
           width: 653px;
           height: 330px;
-
           text-align: justify;
 
           font-size: 2rem;
+
+          @media (max-width: 768px){
+            width: 90%;
+
+            height: auto;
+          }
         }
       }
 
       #right-quem-somos-container {
-        width: 50%;
+        @media (max-width: 1360px) {
+          width: 30%;
+        }
 
+        @media (max-width: 1096px) {
+          margin-left: 100px;
+        }
+
+        img {
+          @media (max-width: 768px){
+            width: 200%;
+          }
+        }
       }
     }
   }
