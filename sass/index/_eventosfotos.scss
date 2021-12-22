@@ -1,0 +1,129 @@
+$tablet: 990px;
+$firstmobile: 768px;
+
+#eventos-fotos {
+  height: auto;
+  width: 100%;
+
+  #container-eventos-fotos {
+    padding-top: 148px;
+    padding-left: 7%;
+    #eventos-fotos-titulo {
+      height: 120px;
+      width: 564px;
+
+      background-color: #d20105;
+
+      color: white;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px 500px 0px 0px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media(max-width: $tablet){
+        height: 100px;
+      }
+
+      @media(max-width: $firstmobile){
+        width: 80%;
+      }
+      
+      h1 {
+        font-size: 45px;
+        font-weight: normal;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        @media(max-width: $tablet){
+          font-size: 40px;
+        }
+
+        @media(max-width:530px){
+          font-size: 35px;
+        }
+
+        @media(max-width:376px){
+          font-size: 27px;
+        }
+      }
+    }
+    
+    #container-generic-fotos {
+      height: auto;
+      width: 93.8%;
+
+      background: linear-gradient(
+        292.27deg,
+        #02447e -3.36%,
+        #256296 67.15%,
+        #327fbd 102.41%
+      );
+      box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 10px 10px 10px;
+      
+
+      #container-fotos {
+
+        display: flex;
+        justify-content: center;
+  
+        flex-wrap: wrap;
+  
+        gap: 19px;
+  
+        padding: 61px 4px 0px ;
+
+        .foto{
+          width: 30.7%;
+
+          img{
+            width: 100%;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+  
+          }
+        }
+        
+
+      }
+    }
+
+
+
+    #container-button {
+      height: 130px;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        height: 63px;
+        width: 200px;
+
+        background: #d20105;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+        border: none;
+
+        color: white;
+
+        font-weight: bold;
+        font-size: 20px;
+
+        &:hover {
+          background: #e72427;
+          transition: 0.3s ease;
+        }
+
+        &:active {
+          transform: translateY(4px);
+        }
+      }
+    }
+  }
+}

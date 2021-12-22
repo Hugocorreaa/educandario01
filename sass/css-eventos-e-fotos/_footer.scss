@@ -1,0 +1,32 @@
+footer {
+    height: 116px;
+    width: 100vw;
+  
+    background: #011351;
+    box-shadow: 0px -3px 10px 6px rgba(0, 0, 0, 0.25);
+    color: white;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 2.5rem;
+
+    @media (max-width: 547px){
+      height: 90px;
+      font-size: 2rem;
+
+    }
+
+    @media (max-width: 439px){
+      height: 70px;
+      font-size: 1.5rem;
+
+    }
+
+    @media (max-width: 351px){
+      height: 65px;
+      font-size: 1.3rem;
+
+    }
+  }

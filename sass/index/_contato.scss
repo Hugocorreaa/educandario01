@@ -1,0 +1,154 @@
+$background-color: #d40105;
+
+#contato {
+  height: auto;
+  width: 100vw;
+
+  background: $background-color;
+
+  padding-top: 42px;
+  padding-bottom: 60px;
+
+  #titulo {
+    height: 98px;
+    width: 408px;
+
+    border-radius: 0 50px 50px 0;
+    box-shadow: inset -2px 7px 4px rgba(0, 0, 0, 0.25);
+
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: rgba(210, 1, 5, 0.88);
+      font-size: 5rem;
+      font-weight: 300;
+
+      margin-left: 50px;
+    }
+  }
+
+  #generic-container-contato {
+    display: flex;
+    #esquerda {
+      width: 50%;
+
+      #contato-main {
+        #mapa-endereco {
+          #mapa {
+            border: 30px;
+
+            margin-top: 60px;
+            margin-left: 78px;
+
+            iframe {
+              border-radius: 5px;
+              box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+          }
+
+          #endereco {
+            
+            height: 215px;
+
+            background: white;
+            border-radius: 5px;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            margin-top: 44px;
+            margin-left: 78px;
+
+            padding: 30px;
+
+            font-size: 2em;
+
+            img {
+              margin-right: 30px;
+            }
+
+            #telefone,
+            #email {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    #direita {
+      width: 50%;
+
+      padding-left: 78px;
+
+      #formulario-redes {
+        #formulario {
+          margin-top: 31px;
+          form {
+            display: flex;
+            flex-direction: column;
+
+            #nome-form,
+            #email-form,
+            #tel-form,
+            #mens-form {
+              width: 75%;
+              height: 49px;
+
+              background: #ffffff;
+              border: 0;
+              box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 10px;
+
+              margin-top: 27px;
+
+              text-indent: 15px;
+              
+              font-size: 20px;
+              &::placeholder {
+                color: #C3BEBE;
+
+                font-size: 25px;
+                
+                padding-left: 19px;
+              }
+
+            }
+
+            #mens-form {
+              height: 151px;
+            }
+
+            #enviar-button {
+              width: 140px;
+              height: 56px;
+
+              margin-top: 27px;
+              margin-left: 54%;
+
+              background: #02447e;
+              border: none;
+              box-shadow: -2px 7px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 50px;
+
+              color: rgba(255, 255, 255, 0.88);
+
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    #redes {
+      margin-top: 30px;
+      margin-left: 260px;
+
+      img {
+        margin-right: 13px;
+      }
+    }
+  }
+}
