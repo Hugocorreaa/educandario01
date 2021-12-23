@@ -584,10 +584,11 @@ header nav #menu #botao-portal:active {
   margin-left: 6.5%;
 }
 
-#quem-somos #quem-somos-generic-container h1 span {
-  -webkit-text-decoration: underline #7AAAD0;
-          text-decoration: underline #7AAAD0;
-  text-underline-offset: 11px;
+#quem-somos #quem-somos-generic-container h1 .barra {
+  height: 7px;
+  width: 62%;
+  border-radius: 50px;
+  background-color: #7AAAD0;
 }
 
 @media (max-width: 500px) {
@@ -827,7 +828,7 @@ header nav #menu #botao-portal:active {
 
 #instagram {
   height: auto;
-  width: 100vw;
+  width: 100%;
   background: white;
   padding-bottom: 67px;
 }
@@ -840,10 +841,11 @@ header nav #menu #botao-portal:active {
   padding-top: 153px;
 }
 
-#instagram h1 span {
-  -webkit-text-decoration: underline #7aaad0;
-          text-decoration: underline #7aaad0;
-  text-underline-offset: 11px;
+#instagram h1 .barra {
+  height: 7px;
+  width: 16%;
+  border-radius: 50px;
+  background-color: #7AAAD0;
 }
 
 @media (max-width: 500px) {
@@ -852,20 +854,103 @@ header nav #menu #botao-portal:active {
   }
 }
 
-#instagram #nosso-instagram-fotos {
+#instagram #container-generic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#instagram #container-generic #nosso-instagram-fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 27px;
-  margin-left: 6.5%;
 }
 
-#instagram #nosso-instagram-fotos img {
+#instagram #container-generic #nosso-instagram-fotos a img {
   height: 337px;
   width: 368px;
   border-radius: 10px;
+}
+
+#instagram #container-generic #nosso-instagram-fotos a img:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1709px) {
+  #instagram #container-generic #nosso-instagram-fotos {
+    width: 80%;
+  }
+}
+
+@media (max-width: 841px) {
+  #instagram #container-generic #nosso-instagram-fotos {
+    display: none;
+  }
+}
+
+#instagram #container-generic-mobile #nosso-instagram-fotos-mobile {
+  display: none;
+}
+
+#instagram #container-generic-mobile #nosso-instagram-fotos-mobile .swiper4 {
+  overflow: hidden;
+}
+
+#instagram #container-generic-mobile #nosso-instagram-fotos-mobile .swiper4 .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 410px) {
+  #instagram #container-generic-mobile #nosso-instagram-fotos-mobile .swiper4 .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+}
+
+#instagram #container-generic-mobile #nosso-instagram-fotos-mobile .swiper4 .swiper-pagination4 {
+  text-align: center;
+}
+
+@media (max-width: 841px) {
+  #instagram #container-generic-mobile #nosso-instagram-fotos-mobile {
+    display: initial;
+  }
 }
 
 #estrutura-escolar {
@@ -881,10 +966,11 @@ header nav #menu #botao-portal:active {
   padding-top: 153px;
 }
 
-#estrutura-escolar h1 span {
-  -webkit-text-decoration: underline #7AAAD0;
-          text-decoration: underline #7AAAD0;
-  text-underline-offset: 11px;
+#estrutura-escolar h1 .barra {
+  height: 7px;
+  width: 16%;
+  border-radius: 50px;
+  background-color: #7AAAD0;
 }
 
 @media (max-width: 500px) {
@@ -1094,15 +1180,27 @@ header nav #menu #botao-portal:active {
   padding: 61px 4px 0px;
 }
 
-#eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos .foto {
-  width: 30.7%;
-}
-
-#eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos .foto img {
-  width: 100%;
+#eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a img {
+  height: 297px;
+  width: 391px;
   -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+}
+
+#eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a img:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #eventos-fotos #container-eventos-fotos #container-button {
@@ -1151,10 +1249,11 @@ header nav #menu #botao-portal:active {
   padding-top: 153px;
 }
 
-#calendario h1 span {
-  -webkit-text-decoration: underline #7AAAD0;
-          text-decoration: underline #7AAAD0;
-  text-underline-offset: 11px;
+#calendario h1 .barra {
+  height: 7px;
+  width: 16%;
+  border-radius: 50px;
+  background-color: #7AAAD0;
 }
 
 @media (max-width: 500px) {

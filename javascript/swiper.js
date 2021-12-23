@@ -1,3 +1,4 @@
+// Swiper Home
 const swiper = new Swiper(".swiper1", {
   // Optional parameters
   direction: "horizontal",
@@ -16,7 +17,7 @@ const swiper = new Swiper(".swiper1", {
 
 });
 
-
+// Swiper Modalidades de Ensino
 var swiper2 = new Swiper(".swiper2", {
   effect: "cards",
   grabCursor: true,
@@ -25,7 +26,7 @@ var swiper2 = new Swiper(".swiper2", {
 });
 
 
-
+//Swiper Estrutura Escolar
 const swiper3 = new Swiper(".swiper3", {
   // Optional parameters
   direction: "horizontal",
@@ -36,10 +37,17 @@ const swiper3 = new Swiper(".swiper3", {
     el: ".swiper-pagination3",
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next3",
-    prevEl: ".swiper-button-prev3",
+});
+
+//Swiper Instagram
+const swiper4 = new Swiper(".swiper4", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination4",
   },
 
 });

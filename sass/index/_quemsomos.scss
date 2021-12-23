@@ -13,9 +13,12 @@
       margin-top: 136px;
       margin-left: 6.5%;
 
-      span{
-        text-decoration: underline #7AAAD0;
-        text-underline-offset: 11px;
+      .barra{
+        height: 7px;
+        width: 62%;
+        border-radius: 50px;
+        background-color: #7AAAD0;
+  
       }
 
       @media (max-width: 500px){
