@@ -72,14 +72,37 @@ $firstmobile: 768px;
 
         gap: 19px;
 
-        padding: 61px 4px 0px;
+        padding-top: 61px;
 
         a {
+
+          &:first-child{
+            display: none;
+          }
+
+          @media (max-width: 918px){
+            &:nth-child(n + 5):nth-child(-n+7){
+              display: none;
+            }
+          }
+
+          @media (max-width: 496px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
           img {
             height: 297px;
             width: 391px;
             box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
             border-radius: 5px;
+
+            @media (max-width: 496px){
+              height: 90%;
+              width: 80%;
+              
+            }
 
             &:hover {
               opacity: 1;
@@ -95,6 +118,8 @@ $firstmobile: 768px;
                 }
               }
             }
+
+
           }
         }
       }

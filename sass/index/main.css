@@ -216,7 +216,7 @@ header nav #menu #botao-portal:active {
 }
 
 #home .swiper1 .swiper-wrapper #slide01 {
-  background-image: url(../img/index/home/bg1.svg);
+  background-image: url(/img/index/home/bg1.svg);
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -326,7 +326,7 @@ header nav #menu #botao-portal:active {
 }
 
 #home .swiper1 .swiper-wrapper #slide02 {
-  background-image: url("../img/index/home/bg2.PNG");
+  background-image: url(/img/index/home/bg2.png);
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -334,7 +334,7 @@ header nav #menu #botao-portal:active {
 }
 
 #home .swiper1 .swiper-wrapper #slide03 {
-  background-image: url(/img/index/home/bg3.PNG);
+  background-image: url(/img/index/home/bg3.png);
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -1177,7 +1177,31 @@ header nav #menu #botao-portal:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 19px;
-  padding: 61px 4px 0px;
+  padding-top: 61px;
+}
+
+#eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a:first-child {
+  display: none;
+}
+
+@media (max-width: 918px) {
+  #eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a:nth-child(n + 5):nth-child(-n+7) {
+    display: none;
+  }
+}
+
+@media (max-width: 496px) {
+  #eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a img {
@@ -1186,6 +1210,13 @@ header nav #menu #botao-portal:active {
   -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+}
+
+@media (max-width: 496px) {
+  #eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a img {
+    height: 90%;
+    width: 80%;
+  }
 }
 
 #eventos-fotos #container-eventos-fotos #container-generic-fotos #container-fotos a img:hover {
