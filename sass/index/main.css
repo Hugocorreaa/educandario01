@@ -216,7 +216,7 @@ header nav #menu #botao-portal:active {
 }
 
 #home .swiper1 .swiper-wrapper #slide01 {
-  background-image: url("../img/index/home/bg01.svg");
+  background-image: url(../img/index/home/bg01.svg);
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -326,7 +326,7 @@ header nav #menu #botao-portal:active {
 }
 
 #home .swiper1 .swiper-wrapper #slide02 {
-  background-image: url("../img/index/home/bg02.png");
+  background-image: url(../img/index/home/bg02.png);
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
