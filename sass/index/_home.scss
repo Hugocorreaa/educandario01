@@ -12,7 +12,7 @@ $yellow: #f1c40f;
 
     .swiper-wrapper {
       #slide01 {
-        background-image: url(./img/index/home/bg1.svg);
+        background-image: url("../img/index/home/bg1.svg");
 
         background-size: cover;
         box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -23,8 +23,6 @@ $yellow: #f1c40f;
 
         justify-content: center;
         align-items: center;
-
-
 
         h1 {
           color: white;
@@ -105,14 +103,14 @@ $yellow: #f1c40f;
       }
 
       #slide02{
-        background-image: url(../img/index/home/bg2.png);
+        background-image: url("./img/index/home/bg2.png");
         background-position: center;
         background-size: cover;
         box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
       }
 
       #slide03{
-        background-image: url('../img/index/home/bg3.png');
+        background-image: url('./img/index/home/bg3.png');
         background-position: center;
         background-size: cover;
         box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
