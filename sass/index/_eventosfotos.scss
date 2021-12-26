@@ -76,12 +76,8 @@ $firstmobile: 768px;
 
         a {
 
-          &:first-child{
-            display: none;
-          }
-
           @media (max-width: 918px){
-            &:nth-child(n + 5):nth-child(-n+7){
+            &:nth-child(n + 4):nth-child(-n+6){
               display: none;
             }
           }
