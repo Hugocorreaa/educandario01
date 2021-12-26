@@ -737,7 +737,7 @@ header nav #menu #botao-portal:active {
 
 @media (max-width: 841px) {
   #contato #generic-container-contato #esquerda {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -906,7 +906,7 @@ header nav #menu #botao-portal:active {
 }
 
 #contato #generic-container-contato #direita #formulario-redes #formulario form #enviar-button {
-  width: 140px;
+  width: 21%;
   height: 56px;
   margin-top: 27px;
   margin-left: 54%;
@@ -917,6 +917,13 @@ header nav #menu #botao-portal:active {
   border-radius: 50px;
   color: rgba(255, 255, 255, 0.88);
   font-size: 2.5rem;
+}
+
+@media (max-width: 541px) {
+  #contato #generic-container-contato #direita #formulario-redes #formulario form #enviar-button {
+    font-size: 2rem;
+    width: 30%;
+  }
 }
 
 #contato #generic-container-contato #redes {

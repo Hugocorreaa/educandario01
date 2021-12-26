@@ -63,7 +63,7 @@ $background-color: #d40105;
       width: 50%;
 
       @media (max-width:841px){
-        width: 90%;
+        width: 95%;
       }
 
       #contato-main {
@@ -192,7 +192,7 @@ $background-color: #d40105;
             }
 
             #enviar-button {
-              width: 140px;
+              width: 21%;
               height: 56px;
 
               margin-top: 27px;
@@ -206,6 +206,12 @@ $background-color: #d40105;
               color: rgba(255, 255, 255, 0.88);
 
               font-size: 2.5rem;
+
+              @media (max-width: 541px){
+                font-size: 2rem;
+
+                width: 30%;
+              }
             }
           }
         }
