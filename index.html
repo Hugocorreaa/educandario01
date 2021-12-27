@@ -14,23 +14,43 @@
 
 <body>
   <header>
+
     <nav>
+
       <div id="logo">
         <img src="img/index/logo ensv branca 1.svg" alt="Logo Educandario" />
       </div>
+
       <div id="btn-mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
-      <div id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Diferenciais</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li id="botao-portal"><a href="#">Portal Acadêmico</a></li>
+      
+      <div class="dropdown">
+        <button class="active"><a href="">Home</a></button>
+        <button><a href="">Diferenciais</a></button>
+        <div class="servicos">
+          <button><span>Serviços</span></button>
+          <ul>
+            <li><a href="">Agenda Digital</a></li>
+            <li><a href="">Boletim Escolar</a></li>
+            <li><a href="">Orações do Dia</a></li>
+            <li><a href="">Pré-Matrícula</a></li>
+            <li><a href="">Ouvidoria</a></li>
+          </ul>
+        </div>
+        <button><a href="">Contato</a></button>
+        <div class="eventos">
+          <button><span>Eventos</span></button>
+          <ul>
+            <li><a href="">Calendário Escolar</a></li>
+            <li><a href="">Fotos</a></li>
+          </ul>
+        </div>
+        <button id="botao-portal"><a href="">Portal Academico</a></button>
       </div>
+      
     </nav>
   </header>
 
