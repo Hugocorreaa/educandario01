@@ -1,270 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-header {
-  height: 116px;
-  width: 100%;
-  background: #d40105;
-}
-
-header nav {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header nav #logo {
-  width: 30%;
-  margin: 1.5rem 0 0 9%;
-}
-
-@media (max-width: 990px) {
-  header nav #logo {
-    padding-left: 38.5%;
-  }
-}
-
-header nav #btn-mobile-menu {
-  display: none;
-}
-
-@media (max-width: 990px) {
-  header nav #btn-mobile-menu {
-    display: initial;
-  }
-}
-
-header nav #btn-mobile-menu div {
-  height: 2px;
-  width: 32px;
-  border-radius: 2px;
-  background: #fff;
-  margin: 8px;
-}
-
-header nav .dropdown {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 1270px) {
-  header nav .dropdown {
-    gap: 4rem;
-  }
-}
-
-@media (max-width: 1108px) {
-  header nav .dropdown {
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 990px) {
-  header nav .dropdown {
-    position: absolute;
-    top: 115px;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background: rgba(210, 1, 5, 0.88);
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 10px 10px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    z-index: 999;
-  }
-}
-
-header nav .dropdown .active {
-  width: 102.92px;
-  height: 54.49px;
-  left: 407px;
-  top: 31px;
-  background: #ffffff;
-  border-radius: 5px;
-  color: #d20105;
-}
-
-header nav .dropdown button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-header nav .dropdown button a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 54.49px;
-  width: 102.92px;
-}
-
-header nav .dropdown button a:hover {
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 5px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-header nav .dropdown div button {
-  height: 54.49px;
-  width: 102.92px;
-}
-
-header nav .dropdown div button span:hover {
-  height: 54.49px;
-  width: 102.92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 5px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-header nav .dropdown #botao-portal {
-  width: 20rem;
-  height: 63px;
-  background: #02447e;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-}
-
-header nav .dropdown #botao-portal:hover {
-  background: #074c88;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-header nav .dropdown #botao-portal:active {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-}
-
-@media (max-width: 1270px) {
-  header nav .dropdown #botao-portal {
-    width: 15rem;
-    height: 50px;
-  }
-}
-
-@media (max-width: 990px) {
-  header nav .dropdown #botao-portal {
-    width: 20rem;
-  }
-}
-
-header nav .dropdown #botao-portal a {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header nav .servicos,
-header nav .eventos {
-  position: relative;
-  z-index: 99;
-}
-
-header nav .servicos ul,
-header nav .eventos ul {
-  width: 172.09px;
-  background-color: #d40105;
-  border-radius: 0px 0px 10px 10px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: white;
-  font-size: 15px;
-  font-family: Nunito;
-  font-weight: bold;
-  margin-top: 30px;
-  right: -46px;
-  position: absolute;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-
-header nav .servicos ul li a,
-header nav .eventos ul li a {
-  height: 60px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header nav .servicos ul li a:hover,
-header nav .eventos ul li a:hover {
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 5px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-header nav .servicos button:focus + ul,
-header nav .eventos button:focus + ul {
-  opacity: 1;
-  pointer-events: all;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
 #home {
   height: 99vh;
   width: 100vw;
@@ -277,7 +13,7 @@ header nav .eventos button:focus + ul {
 }
 
 #home .swiper1 .swiper-wrapper #slide01 {
-  background-image: url(/educandario01/img/index/home/bg01.svg);
+  background-image: url(/img/index/home/bg01.svg);
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -387,7 +123,7 @@ header nav .eventos button:focus + ul {
 }
 
 #home .swiper1 .swiper-wrapper #slide02 {
-  background-image: url(/educandario01/index/home/bg02.png);
+  background-image: url(/img/index/home/bg02.png);
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -395,7 +131,7 @@ header nav .eventos button:focus + ul {
 }
 
 #home .swiper1 .swiper-wrapper #slide03 {
-  background-image: url(/educandario01/index/home/bg03.png);
+  background-image: url(/img/index/home/bg03.png);
   background-position: center;
   background-size: cover;
   -webkit-box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -524,6 +260,13 @@ header nav .eventos button:focus + ul {
   }
 }
 
+#modalidades-ensino #generic-container-modalidades .divi {
+  height: 2px;
+  width: 50px;
+  background: #e74040;
+  margin-top: 20px;
+}
+
 #modalidades-ensino #generic-container-modalidades #card-modalidades-containers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +291,28 @@ header nav .eventos button:focus + ul {
   padding: 40px;
 }
 
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades #img {
+  height: 72px;
+  width: 72px;
+  background: #02447e;
+  border-radius: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades #img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 200px;
+}
+
 #modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades h2 {
   font-size: 2.2rem;
   font-weight: normal;
@@ -558,7 +323,30 @@ header nav .eventos button:focus + ul {
   font-size: 1.4rem;
   color: #737373;
   margin-top: 50px;
-  width: 221px;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades .card-modalidades-inside-container p {
+  height: 80px;
+  width: 260px;
+  padding-right: 50px;
+  overflow-y: auto;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades .card-modalidades-inside-container p::-webkit-scrollbar {
+  width: 12px;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades .card-modalidades-inside-container p::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.233);
+  border-radius: 20px;
+}
+
+#modalidades-ensino #generic-container-modalidades #card-modalidades-containers .card-modalidades .card-modalidades-inside-container p::-webkit-scrollbar-thumb {
+  background-color: #d20105;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid rgba(128, 128, 128, 0.233);
 }
 
 #modalidades-ensino #generic-container-modalidades-mobile {
@@ -592,17 +380,63 @@ header nav .eventos button:focus + ul {
     border-radius: 10px;
     padding: 40px;
   }
+  #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste #img {
+    height: 72px;
+    width: 72px;
+    background: #02447e;
+    border-radius: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste #img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+  }
   #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste h2 {
     color: black;
     font-size: 2.2rem;
     font-weight: normal;
     margin-top: 10px;
   }
+  #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste .divi {
+    height: 2px;
+    width: 50px;
+    background: #e74040;
+    margin-top: 20px;
+  }
   #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste .card-modalidades-inside-container {
     font-size: 1.4rem;
     color: #737373;
-    margin-top: 50px;
-    width: 221px;
+    width: 100%;
+    height: 100%;
+  }
+  #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste .card-modalidades-inside-container p {
+    height: 100px;
+    margin-top: 10px;
+    overflow-y: auto;
+  }
+  #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste .card-modalidades-inside-container p::-webkit-scrollbar {
+    width: 12px;
+    margin-left: 50px;
+  }
+  #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste .card-modalidades-inside-container p::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.233);
+    border-radius: 20px;
+  }
+  #modalidades-ensino #generic-container-modalidades-mobile .swiper-container .swiper-slide.teste .card-modalidades-inside-container p::-webkit-scrollbar-thumb {
+    background-color: #d20105;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid rgba(128, 128, 128, 0.233);
   }
 }
 
@@ -649,7 +483,7 @@ header nav .eventos button:focus + ul {
   height: 7px;
   width: 62%;
   border-radius: 50px;
-  background-color: #7AAAD0;
+  background-color: #7aaad0;
 }
 
 @media (max-width: 500px) {
@@ -705,6 +539,11 @@ header nav .eventos button:focus + ul {
             justify-content: center;
     padding-top: 40px;
   }
+}
+
+#quem-somos #quem-somos-generic-container #left-right-quem-somos-container #right-quem-somos-container img {
+  height: 496.27px;
+  width: 571.39px;
 }
 
 @media (max-width: 768px) {
@@ -1108,6 +947,14 @@ header nav .eventos button:focus + ul {
           align-items: center;
 }
 
+#instagram #container-generic-mobile #nosso-instagram-fotos-mobile .swiper4 .swiper-wrapper .swiper-slide img {
+  height: 250px;
+  width: 400px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+}
+
 @media (max-width: 410px) {
   #instagram #container-generic-mobile #nosso-instagram-fotos-mobile .swiper4 .swiper-wrapper .swiper-slide img {
     width: 100%;
@@ -1141,7 +988,7 @@ header nav .eventos button:focus + ul {
   height: 7px;
   width: 16%;
   border-radius: 50px;
-  background-color: #7AAAD0;
+  background-color: #7aaad0;
 }
 
 @media (max-width: 500px) {
@@ -1178,11 +1025,25 @@ header nav .eventos button:focus + ul {
   }
 }
 
+#estrutura-escolar #estrutura-escolar-fotos #container-foto-overlay {
+  height: 250px;
+  width: 400px;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#estrutura-escolar #estrutura-escolar-fotos #container-foto-overlay img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
 #estrutura-escolar #estrutura-escolar-fotos #foto-overlay {
   position: absolute;
   top: 0;
-  left: 4px;
-  width: 98.05%;
+  left: 0;
+  width: 100%;
   height: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.25s;
@@ -1215,17 +1076,7 @@ header nav .eventos button:focus + ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 11px;
   text-transform: uppercase;
-}
-
-#estrutura-escolar #estrutura-escolar-fotos #container-foto-overlay {
-  position: relative;
-}
-
-#estrutura-escolar #estrutura-escolar-fotos #container-foto-overlay #img {
-  display: block;
-  width: 100%;
 }
 
 #estrutura-escolar #estrutura-escolar-fotos-mobile {
@@ -1246,6 +1097,14 @@ header nav .eventos button:focus + ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#estrutura-escolar #estrutura-escolar-fotos-mobile .swiper3 .swiper-wrapper .swiper-slide img {
+  height: 250px;
+  width: 400px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
 }
 
 @media (max-width: 410px) {
@@ -1472,46 +1331,6 @@ header nav .eventos button:focus + ul {
           align-items: center;
 }
 
-footer {
-  height: 116px;
-  width: 100vw;
-  background: #011351;
-  -webkit-box-shadow: 0px -3px 10px 6px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px -3px 10px 6px rgba(0, 0, 0, 0.25);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2.5rem;
-}
-
-@media (max-width: 547px) {
-  footer {
-    height: 90px;
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 439px) {
-  footer {
-    height: 70px;
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 351px) {
-  footer {
-    height: 65px;
-    font-size: 1.3rem;
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1553,7 +1372,24 @@ html {
   overflow-x: hidden;
 }
 
-main {
-  height: 800%;
+body #wpflu {
+  position: fixed;
+  right: 14px;
+  bottom: 0;
+  z-index: 999;
+}
+
+body #wpflu img:hover {
+  width: 105%;
+}
+
+@media (max-width: 991px) {
+  body #wpflu {
+    display: none;
+  }
+}
+
+body main {
+  background: white;
 }
 /*# sourceMappingURL=main.css.map */

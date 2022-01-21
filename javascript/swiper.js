@@ -22,7 +22,6 @@ var swiper2 = new Swiper(".swiper2", {
   effect: "cards",
   grabCursor: true,
   loop: true,
-/*       initialSlide: 2, */
 });
 
 

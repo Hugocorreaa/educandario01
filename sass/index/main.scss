@@ -1,5 +1,5 @@
-@import "nav", "home", "modalidadesensino", "quemsomos", "contato", "instagram",
-  "estruturaescolar", "eventosfotos","calendario", "footer";
+@import "home", "modalidadesensino", "quemsomos", "contato", "instagram",
+  "estruturaescolar", "eventosfotos","calendario";
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
@@ -44,6 +44,29 @@ html {
   overflow-x: hidden;
 }
 
-main {
-  height: 800%;
+body{
+
+  #wpflu{
+    position: fixed;
+    right: 14px;
+    bottom: 0;
+
+    z-index: 999;
+
+    img{
+      &:hover{
+        width: 105%;
+      }
+    }
+
+    @media (max-width: 991px){
+      display: none;
+    }
+  }
+
+  main{
+    background: white;
+  }
+
 }
+

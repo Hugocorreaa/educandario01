@@ -1,5 +1,4 @@
 #estrutura-escolar {
-
   height: auto;
   width: 100vw;
 
@@ -11,23 +10,18 @@
     padding-bottom: 72px;
     padding-top: 153px;
 
-    .barra{
+    .barra {
       height: 7px;
       width: 16%;
       border-radius: 50px;
-      background-color: #7AAAD0;
-
+      background-color: #7aaad0;
     }
 
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
       font-size: 4rem;
 
-      padding-top: 100px
-      ;
+      padding-top: 100px;
     }
-
-
-
   }
 
   #estrutura-escolar-fotos {
@@ -38,31 +32,46 @@
     flex-wrap: wrap;
     gap: 25px;
 
-    @media(min-width:1709px){
+    @media (min-width: 1709px) {
       margin-right: 200px;
     }
 
-    @media (max-width: 841px){
+    @media (max-width: 841px) {
       display: none;
+    }
+
+    #container-foto-overlay {
+      height: 250px;
+      width: 400px;
+
+      border-radius: 5px;
+
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 5px;
+      }
     }
 
     #foto-overlay {
       position: absolute;
       top: 0;
-      left: 4px;
-      width: 98.05%;
+      left: 0;
+      width: 100%;
       height: 100%;
 
       opacity: 0;
       transition: opacity 0.25s;
 
-      &:hover{
+      &:hover {
         opacity: 1;
       }
 
       display: flex;
       align-items: flex-end;
-
 
       p {
         height: 80px;
@@ -77,53 +86,43 @@
         justify-content: center;
         align-items: center;
 
-        margin-bottom: 11px;
-
         text-transform: uppercase;
-      }
-    }
-
-    #container-foto-overlay {
-      position: relative;
-
-      
-
-      #img {
-        display: block;
-        width: 100%;
       }
     }
   }
 
-  #estrutura-escolar-fotos-mobile{
+  #estrutura-escolar-fotos-mobile {
     display: none;
-        
-    .swiper3{
+
+    .swiper3 {
       overflow: hidden;
 
-      .swiper-wrapper{
-
-        .swiper-slide{
+      .swiper-wrapper {
+        .swiper-slide {
           display: flex;
           justify-content: center;
           align-items: center;
 
-          img{
-            @media(max-width: 410px){
+          img {
+            height: 250px;
+            width: 400px;
+
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 5px;
+            
+            @media (max-width: 410px) {
               width: 100%;
             }
           }
-
         }
       }
 
-      .swiper-pagination3{
+      .swiper-pagination3 {
         text-align: center;
-
       }
     }
 
-    @media (max-width: 841px){
+    @media (max-width: 841px) {
       display: initial;
     }
   }

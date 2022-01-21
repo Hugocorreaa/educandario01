@@ -1,0 +1,84 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+#calendar {
+    height: 600px;
+    width: 80%;
+    margin: auto auto;
+}
+
+.fc-toolbar-title {
+    color: #D40105 !important;
+    font-size: 3em !important;
+    border-bottom: 3px solid #D40105;
+}
+
+.fc-col-header-cell-cushion {
+    color: #02447E;
+    font-size: 1.7em;
+}
+
+.fc-view-harness {
+    border-top: 40px solid #327FBD;
+    border-radius: 30px;
+}
+
+.fc-event-title-container {
+    background-color: #02447E;
+    border: 0;
+}
+
+.fc-button-primary {
+    background: #D40105 !important;
+    font-size: 2em !important;
+}
+
+.fc-button-primary:hover {
+    background: #aa0003 !important;
+}
+
+.fc-toolbar-title::first-letter {
+    text-transform: capitalize;
+}
+
+.fc-view-harness {
+    background: #F2F2F2;
+}
+
+.fc-day-today {
+    background: #327FBD !important;
+}
+
+.fc-daygrid-day-top {
+    color: #ACABAB;
+}
+
+.fc-license-message {
+    display: none;
+}
+
+.fc-toolbar-chunk .fc-button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 0;
+}
+
+.fc-daygrid-day-number {
+    font-size: 1.5em;
+}
+
+.fc-event-title-container {
+    font-size: 1.5em !important;
+}
+
+@media (max-width: 526px) {
+
+    .fc .fc-toolbar-title {
+        margin-bottom: 30px;
+    }
+
+    .fc .fc-toolbar {
+        display: block;
+    }
+}

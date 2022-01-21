@@ -30,6 +30,7 @@
     width: 90%;
     font-weight: 400;
     font-size: 4rem;
+
 }
 .card h2{
     font-weight: 400;
@@ -49,4 +50,41 @@
     border-radius: 10px;
     margin-top: 5%;
     width: 55%;
+}
+@media (max-width: 768px){
+    .card{
+        width: 70%;
+    }
+    .error-header h1{
+        width: 100%;
+    }
+    .erro{
+        width: 80%;
+    }
+}
+@media (max-width: 425px){
+    .card{
+        width: 95%;
+    }
+    .error-header h1{
+        font-size: 2.5rem;
+    }
+    .error-header img{
+        width: 30%;
+    }
+    .erro{
+        width: 100%;
+    }
+}
+
+@media (max-width:320px){
+    .card li{
+        font-size: 1.5rem;
+    }
+    .card h2{
+        font-size: 2rem;
+    }
+    .error-header h1{
+        font-size: 2rem;
+    }
 }
