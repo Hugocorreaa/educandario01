@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,mHAAI;AACZ,OAAO,CAAC,yFAAI;AAGZ,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EAEV,WAAW,EAAE,oBAAoB;CAElC",
+    "sources": [
+        "erro-404.scss"
+    ],
+    "names": [],
+    "file": "erro-404.css"
+}
